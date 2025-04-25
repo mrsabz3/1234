@@ -1,0 +1,34 @@
+CREATE TABLE exercises (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  type TEXT NOT NULL,
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  difficulty TEXT NOT NULL,
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE germanExercises (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  solution TEXT NOT NULL,
+  difficulty TEXT NOT NULL
+);
+
+CREATE TABLE mathExercises (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  solution TEXT NOT NULL,
+  difficulty TEXT NOT NULL,
+  category TEXT NOT NULL
+);
+
+CREATE TABLE userProgress (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  userId TEXT NOT NULL,
+  exerciseId INTEGER NOT NULL,
+  completed BOOLEAN DEFAULT FALSE,
+  score INTEGER,
+  completedAt TIMESTAMP
+);
