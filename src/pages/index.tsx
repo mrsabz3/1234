@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { Pricing } from "@/components/landing/Pricing";
 
 
-console.log("what")
+console.log("wha1234t")
 
 export default function Home() {
   // Add padding to body when the component mounts
