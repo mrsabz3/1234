@@ -6,6 +6,9 @@ import { Features } from "@/components/landing/Features";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Pricing } from "@/components/landing/Pricing";
 
+
+console.log("what")
+
 export default function Home() {
   // Add padding to body when the component mounts
   useEffect(() => {
