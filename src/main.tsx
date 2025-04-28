@@ -45,7 +45,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-console.log("Wh2sat")
+console.log("Wh23sat")
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
