@@ -45,6 +45,8 @@ const router = createBrowserRouter([
   },
 ]);
 
+console.log("What")
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="light" storageKey="studienkolleg-theme">
